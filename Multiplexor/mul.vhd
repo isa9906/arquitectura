@@ -19,6 +19,8 @@ begin
 		VARIABLE Y: BIT;
 		VARIABLE Z: BIT;
 	begin
+		Y := '0';
+		Z := '0';
 		if(STRB = '1') then
 			if(S0 = '0' and S1 = '0' and S2 = '0') then
 				Y := I0;

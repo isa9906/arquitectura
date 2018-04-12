@@ -177,60 +177,54 @@ TRANSITION_LIST("C")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.316;
 		NODE
 		{
-			REPEAT = 127;
-			LEVEL 1 FOR 5.0;
-			LEVEL X FOR 5.0;
+			REPEAT = 10;
+			NODE
+			{
+				REPEAT = 128;
+				LEVEL 0 FOR 5.0;
+				LEVEL 1 FOR 5.0;
+			}
+			NODE
+			{
+				REPEAT = 8;
+				LEVEL 0 FOR 80.0;
+				LEVEL 1 FOR 80.0;
+			}
+			NODE
+			{
+				REPEAT = 32;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 20.0;
+			}
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 320.0;
+				LEVEL 1 FOR 320.0;
+			}
+			NODE
+			{
+				REPEAT = 64;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 160.0;
+				LEVEL 1 FOR 160.0;
+			}
+			NODE
+			{
+				REPEAT = 16;
+				LEVEL 0 FOR 40.0;
+				LEVEL 1 FOR 40.0;
+			}
+			LEVEL 0 FOR 640.0;
+			LEVEL 1 FOR 640.0;
 		}
-		LEVEL 1 FOR 5.0;
-		LEVEL X FOR 80.032;
-		NODE
-		{
-			REPEAT = 7;
-			LEVEL 1 FOR 80.0;
-			LEVEL X FOR 80.0;
-		}
-		LEVEL 1 FOR 80.0;
-		LEVEL X FOR 19.953;
-		NODE
-		{
-			REPEAT = 31;
-			LEVEL 1 FOR 20.0;
-			LEVEL X FOR 20.0;
-		}
-		LEVEL 1 FOR 20.0;
-		LEVEL X FOR 320.082;
-		LEVEL 1 FOR 320.0;
-		LEVEL X FOR 320.0;
-		LEVEL 1 FOR 319.621;
-		LEVEL X FOR 10.369;
-		NODE
-		{
-			REPEAT = 63;
-			LEVEL 1 FOR 10.0;
-			LEVEL X FOR 10.0;
-		}
-		LEVEL 1 FOR 9.735;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL X FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL X FOR 160.0;
-		LEVEL 1 FOR 160.265;
-		LEVEL X FOR 39.654;
-		NODE
-		{
-			REPEAT = 15;
-			LEVEL 1 FOR 40.0;
-			LEVEL X FOR 40.0;
-		}
-		LEVEL 1 FOR 40.266;
-		LEVEL X FOR 639.514;
-		LEVEL 1 FOR 92790.193;
 	}
 }
 
@@ -552,7 +546,7 @@ DISPLAY_LINE
 
 TIME_BAR
 {
-	TIME = 5000;
+	TIME = 10000;
 	MASTER = TRUE;
 }
 ;

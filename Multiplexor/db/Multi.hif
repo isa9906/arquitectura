@@ -30,7 +30,7 @@ ON
 # case_insensitive
 # source_file
 mul.vhd
-a5405a7333bdd493858acebf45e6
+51d64b216192f2f8631e6595704bad58
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -46,7 +46,7 @@ ON
 |
 }
 # lmf
-..|..|..|..|altera|90sp2|quartus|lmf|maxplus2.lmf
+..|..|..|..|..|altera|90sp2|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 

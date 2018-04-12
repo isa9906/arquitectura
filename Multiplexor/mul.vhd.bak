@@ -19,41 +19,43 @@ begin
 		VARIABLE Y: BIT;
 		VARIABLE Z: BIT;
 	begin
+		Y = '0';
+		Z = '0';
 		if(STRB = '1') then
 			if(S0 = '0' and S1 = '0' and S2 = '0') then
-				Y <= I0;
+				Y := I0;
 			elsif(S0 = '0' and S1 = '0' and S2 = '1') then
-				Y <= I1;
+				Y := I1;
 			elsif(S0 = '0' and S1 = '1' and S2 = '0') then
-				Y <= I2;
+				Y := I2;
 			elsif(S0 = '0' and S1 = '1' and S2 = '1') then
-				Y <= I3;
+				Y := I3;
 			elsif(S0 = '1' and S1 = '0' and S2 = '0') then
-				Y <= I4;
+				Y := I4;
 			elsif(S0 = '1' and S1 = '0' and S2 = '1') then
-				Y <= I5;
+				Y := I5;
 			elsif(S0 = '1' and S1 = '1' and S2 = '0') then
-				Y <= I6;
+				Y := I6;
 			elsif(S0 = '1' and S1 = '1' and S2 = '1') then
-				Y <= I7;
+				Y := I7;
 			end if;
 		else  
 			if(S0 = '0' and S1 = '0' and S2 = '0') then
-				Z <= I0;
+				Z := I0;
 			elsif(S0 = '0' and S1 = '0' and S2 = '1') then
-				Z <= I1;
+				Z := I1;
 			elsif(S0 = '0' and S1 = '1' and S2 = '0') then
-				Z <= I2;
+				Z := I2;
 			elsif(S0 = '0' and S1 = '1' and S2 = '1') then
-				Z <= I3;
+				Z := I3;
 			elsif(S0 = '1' and S1 = '0' and S2 = '0') then
-				Z <= I4;
+				Z := I4;
 			elsif(S0 = '1' and S1 = '0' and S2 = '1') then
-				Z <= I5;
+				Z := I5;
 			elsif(S0 = '1' and S1 = '1' and S2 = '0') then
-				Z <= I6;
+				Z := I6;
 			elsif(S0 = '1' and S1 = '1' and S2 = '1') then
-				Z <= I7;
+				Z := I7;
 			end if;
 		end if;
 		

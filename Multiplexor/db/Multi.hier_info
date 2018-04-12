@@ -1,17 +1,17 @@
 |Multi
-I0 => Z~12.DATAB
-I1 => Z~10.DATAB
-I2 => Z~8.DATAB
-I3 => Z~6.DATAB
-I4 => Z~4.DATAB
+I0 => Z~7.DATAB
+I1 => Z~6.DATAB
+I2 => Z~5.DATAB
+I3 => Z~4.DATAB
+I4 => Z~3.DATAB
 I5 => Z~2.DATAB
-I6 => Z~0.DATAB
-I7 => Z~0.DATAA
-S0 => process_0~9.IN0
+I6 => Z~1.DATAB
+I7 => Z~0.DATAB
+S0 => process_0~10.IN0
 S0 => process_0~7.IN0
 S0 => process_0~1.IN0
 S0 => process_0~4.IN0
-S1 => process_0~9.IN1
+S1 => process_0~10.IN1
 S1 => process_0~4.IN1
 S1 => process_0~1.IN1
 S1 => process_0~7.IN1
@@ -22,9 +22,9 @@ S2 => process_0~2.IN0
 S2 => process_0~0.IN0
 S2 => process_0~3.IN0
 S2 => process_0~6.IN0
-S2 => process_0~10.IN1
-STRB => Y~0.IN1
-STRB => Z~14.IN1
+S2 => process_0~9.IN1
+STRB => Z.OUTPUTSELECT
+STRB => Y.OUTPUTSELECT
 C <= C~0.DB_MAX_OUTPUT_PORT_TYPE
 
 

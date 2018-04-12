@@ -1,5 +1,5 @@
 Fitter report for Multi
-Tue Apr 10 13:13:16 2018
+Wed Apr 11 22:58:47 2018
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -24,25 +24,23 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
  16. Fitter Resource Utilization by Entity
  17. Delay Chain Summary
  18. Pad To Core Delay Chain Fanout
- 19. Control Signals
- 20. Global & Other Fast Signals
- 21. Non-Global High Fan-Out Signals
- 22. Interconnect Usage Summary
- 23. LAB Logic Elements
- 24. LAB Signals Sourced
- 25. LAB Signals Sourced Out
- 26. LAB Distinct Inputs
- 27. I/O Rules Summary
- 28. I/O Rules Details
- 29. I/O Rules Matrix
- 30. Fitter Device Options
- 31. Operating Settings and Conditions
- 32. Estimated Delay Added for Hold Timing
- 33. Advanced Data - General
- 34. Advanced Data - Placement Preparation
- 35. Advanced Data - Placement
- 36. Advanced Data - Routing
- 37. Fitter Messages
+ 19. Non-Global High Fan-Out Signals
+ 20. Interconnect Usage Summary
+ 21. LAB Logic Elements
+ 22. LAB Signals Sourced
+ 23. LAB Signals Sourced Out
+ 24. LAB Distinct Inputs
+ 25. I/O Rules Summary
+ 26. I/O Rules Details
+ 27. I/O Rules Matrix
+ 28. Fitter Device Options
+ 29. Operating Settings and Conditions
+ 30. Estimated Delay Added for Hold Timing
+ 31. Advanced Data - General
+ 32. Advanced Data - Placement Preparation
+ 33. Advanced Data - Placement
+ 34. Advanced Data - Routing
+ 35. Fitter Messages
 
 
 
@@ -68,7 +66,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +-------------------------------+----------------------------------------------+
-; Fitter Status                 ; Successful - Tue Apr 10 13:13:16 2018        ;
+; Fitter Status                 ; Successful - Wed Apr 11 22:58:47 2018        ;
 ; Quartus II Version            ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                 ; Multi                                        ;
 ; Top-level Entity Name         ; Multi                                        ;
@@ -76,7 +74,7 @@ applicable agreement for further details.
 ; Device                        ; EP2S15F484C3                                 ;
 ; Timing Models                 ; Final                                        ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 6 / 12,480 ( < 1 % )                         ;
+;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                         ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
 ; Total registers               ; 0                                            ;
 ; Total pins                    ; 13 / 343 ( 4 % )                             ;
@@ -153,19 +151,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; C        ; Incomplete set of assignments ;
-; I3       ; Incomplete set of assignments ;
-; S1       ; Incomplete set of assignments ;
-; I1       ; Incomplete set of assignments ;
-; S0       ; Incomplete set of assignments ;
-; I7       ; Incomplete set of assignments ;
-; I5       ; Incomplete set of assignments ;
-; S2       ; Incomplete set of assignments ;
-; I2       ; Incomplete set of assignments ;
-; I0       ; Incomplete set of assignments ;
-; I6       ; Incomplete set of assignments ;
-; I4       ; Incomplete set of assignments ;
 ; STRB     ; Incomplete set of assignments ;
+; C        ; Incomplete set of assignments ;
+; I6       ; Incomplete set of assignments ;
+; I7       ; Incomplete set of assignments ;
+; I2       ; Incomplete set of assignments ;
+; S1       ; Incomplete set of assignments ;
+; S2       ; Incomplete set of assignments ;
+; I4       ; Incomplete set of assignments ;
+; I5       ; Incomplete set of assignments ;
+; I0       ; Incomplete set of assignments ;
+; S0       ; Incomplete set of assignments ;
+; I1       ; Incomplete set of assignments ;
+; I3       ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -175,8 +173,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 19 ( 0.00 % )  ;
-;     -- Achieved         ; 0 / 19 ( 0.00 % )  ;
+;     -- Requested        ; 0 / 15 ( 0.00 % )  ;
+;     -- Achieved         ; 0 / 15 ( 0.00 % )  ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -198,14 +196,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 19      ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 15      ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
+The pin-out file can be found in C:/Users/alari/Desktop/arquitectura/Multiplexor/Multi.pin.
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -213,32 +211,32 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 +-----------------------------------------------------------------------------------+----------------------+
 ; Resource                                                                          ; Usage                ;
 +-----------------------------------------------------------------------------------+----------------------+
-; Combinational ALUTs                                                               ; 6 / 12,480 ( < 1 % ) ;
+; Combinational ALUTs                                                               ; 2 / 12,480 ( < 1 % ) ;
 ; Dedicated logic registers                                                         ; 0 / 12,480 ( 0 % )   ;
 ;                                                                                   ;                      ;
 ; Combinational ALUT usage by number of inputs                                      ;                      ;
-;     -- 7 input functions                                                          ; 0                    ;
-;     -- 6 input functions                                                          ; 2                    ;
+;     -- 7 input functions                                                          ; 2                    ;
+;     -- 6 input functions                                                          ; 0                    ;
 ;     -- 5 input functions                                                          ; 0                    ;
 ;     -- 4 input functions                                                          ; 0                    ;
-;     -- <=3 input functions                                                        ; 4                    ;
+;     -- <=3 input functions                                                        ; 0                    ;
 ;                                                                                   ;                      ;
 ; Combinational ALUTs by mode                                                       ;                      ;
-;     -- normal mode                                                                ; 6                    ;
-;     -- extended LUT mode                                                          ; 0                    ;
+;     -- normal mode                                                                ; 0                    ;
+;     -- extended LUT mode                                                          ; 2                    ;
 ;     -- arithmetic mode                                                            ; 0                    ;
 ;     -- shared arithmetic mode                                                     ; 0                    ;
 ;                                                                                   ;                      ;
-; Logic utilization                                                                 ; 8 / 12,480 ( < 1 % ) ;
+; Logic utilization                                                                 ; 4 / 12,480 ( < 1 % ) ;
 ;     -- Difficulty Clustering Design                                               ; Low                  ;
-;     -- Combinational ALUT/register pairs used in final Placement                  ; 6                    ;
-;         -- Combinational with no register                                         ; 6                    ;
+;     -- Combinational ALUT/register pairs used in final Placement                  ; 2                    ;
+;         -- Combinational with no register                                         ; 2                    ;
 ;         -- Register only                                                          ; 0                    ;
 ;         -- Combinational with a register                                          ; 0                    ;
 ;     -- Estimated pairs recoverable by pairing ALUTs and registers as design grows ; 0                    ;
 ;     -- Estimated Combinational ALUT/register pairs unavailable                    ; 2                    ;
-;         -- Unavailable due to unpartnered 7 LUTs                                  ; 0                    ;
-;         -- Unavailable due to unpartnered 6 LUTs                                  ; 2                    ;
+;         -- Unavailable due to unpartnered 7 LUTs                                  ; 2                    ;
+;         -- Unavailable due to unpartnered 6 LUTs                                  ; 0                    ;
 ;         -- Unavailable due to unpartnered 5 LUTs                                  ; 0                    ;
 ;         -- Unavailable due to LAB-wide signal conflicts                           ; 0                    ;
 ;         -- Unavailable due to LAB input limits                                    ; 0                    ;
@@ -247,7 +245,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ;     -- Dedicated logic registers                                                  ; 0 / 12,480 ( 0 % )   ;
 ;     -- I/O registers                                                              ; 0 / 1,930 ( 0 % )    ;
 ;                                                                                   ;                      ;
-; ALMs:  partially or completely used                                               ; 4 / 6,240 ( < 1 % )  ;
+; ALMs:  partially or completely used                                               ; 2 / 6,240 ( < 1 % )  ;
 ;                                                                                   ;                      ;
 ; Total LABs:  partially or completely used                                         ; 1 / 780 ( < 1 % )    ;
 ;                                                                                   ;                      ;
@@ -255,14 +253,14 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; Virtual pins                                                                      ; 0                    ;
 ; I/O pins                                                                          ; 13 / 343 ( 4 % )     ;
 ;     -- Clock pins                                                                 ; 4 / 16 ( 25 % )      ;
-; Global signals                                                                    ; 1                    ;
+; Global signals                                                                    ; 0                    ;
 ; M512s                                                                             ; 0 / 104 ( 0 % )      ;
 ; M4Ks                                                                              ; 0 / 78 ( 0 % )       ;
 ; Total block memory bits                                                           ; 0 / 419,328 ( 0 % )  ;
 ; Total block memory implementation bits                                            ; 0 / 419,328 ( 0 % )  ;
 ; DSP block 9-bit elements                                                          ; 0 / 96 ( 0 % )       ;
 ; PLLs                                                                              ; 0 / 6 ( 0 % )        ;
-; Global clocks                                                                     ; 1 / 16 ( 6 % )       ;
+; Global clocks                                                                     ; 0 / 16 ( 0 % )       ;
 ; Regional clocks                                                                   ; 0 / 32 ( 0 % )       ;
 ; SERDES transmitters                                                               ; 0 / 38 ( 0 % )       ;
 ; SERDES receivers                                                                  ; 0 / 42 ( 0 % )       ;
@@ -272,12 +270,12 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; Remote update blocks                                                              ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)                                            ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)                                               ; 0% / 0% / 0%         ;
-; Maximum fan-out node                                                              ; Z~17                 ;
+; Maximum fan-out node                                                              ; S1                   ;
 ; Maximum fan-out                                                                   ; 2                    ;
-; Highest non-global fan-out signal                                                 ; Z~17                 ;
+; Highest non-global fan-out signal                                                 ; S1                   ;
 ; Highest non-global fan-out                                                        ; 2                    ;
-; Total fan-out                                                                     ; 25                   ;
-; Average fan-out                                                                   ; 1.19                 ;
+; Total fan-out                                                                     ; 15                   ;
+; Average fan-out                                                                   ; 0.94                 ;
 +-----------------------------------------------------------------------------------+----------------------+
 *  Register count does not include registers inside block RAM or DSP blocks.
 
@@ -288,18 +286,18 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; I0   ; AB7   ; 7        ; 29           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I1   ; B12   ; 4        ; 22           ; 27           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I2   ; AA10  ; 10       ; 25           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I3   ; L8    ; 5        ; 40           ; 17           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I4   ; C12   ; 4        ; 22           ; 27           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I5   ; AA13  ; 8        ; 18           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I6   ; Y10   ; 7        ; 22           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; I7   ; V9    ; 10       ; 26           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; S0   ; U21   ; 1        ; 0            ; 6            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; S1   ; W11   ; 8        ; 17           ; 0            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; S2   ; U12   ; 8        ; 15           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; STRB ; N20   ; 1        ; 0            ; 10           ; 1           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I0   ; AA11  ; 7        ; 22           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I1   ; H21   ; 2        ; 0            ; 20           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I2   ; Y11   ; 7        ; 22           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I3   ; Y10   ; 7        ; 22           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I4   ; Y16   ; 8        ; 13           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I5   ; V12   ; 8        ; 17           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I6   ; AB16  ; 8        ; 14           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; I7   ; C7    ; 4        ; 29           ; 27           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; S0   ; W10   ; 7        ; 22           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; S1   ; AA4   ; 7        ; 38           ; 0            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; S2   ; M2    ; 5        ; 40           ; 16           ; 2           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; STRB ; AA12  ; 8        ; 18           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -308,26 +306,26 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; C    ; Y7    ; 7        ; 29           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; C    ; J6    ; 5        ; 40           ; 20           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 12mA             ; Off         ; Fitter               ; 0 pF ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
-+----------------------------------------------------------+
-; I/O Bank Usage                                           ;
-+----------+----------------+---------------+--------------+
-; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
-+----------+----------------+---------------+--------------+
-; 1        ; 2 / 40 ( 5 % ) ; 3.3V          ; --           ;
-; 2        ; 0 / 44 ( 0 % ) ; 3.3V          ; --           ;
-; 3        ; 1 / 50 ( 2 % ) ; 3.3V          ; --           ;
-; 4        ; 2 / 35 ( 6 % ) ; 3.3V          ; --           ;
-; 5        ; 1 / 44 ( 2 % ) ; 3.3V          ; --           ;
-; 6        ; 0 / 40 ( 0 % ) ; 3.3V          ; --           ;
-; 7        ; 3 / 34 ( 9 % ) ; 3.3V          ; --           ;
-; 8        ; 3 / 43 ( 7 % ) ; 3.3V          ; --           ;
-; 9        ; 0 / 6 ( 0 % )  ; 3.3V          ; --           ;
-; 10       ; 2 / 6 ( 33 % ) ; 3.3V          ; --           ;
-+----------+----------------+---------------+--------------+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 0 / 40 ( 0 % )  ; 3.3V          ; --           ;
+; 2        ; 1 / 44 ( 2 % )  ; 3.3V          ; --           ;
+; 3        ; 1 / 50 ( 2 % )  ; 3.3V          ; --           ;
+; 4        ; 1 / 35 ( 3 % )  ; 3.3V          ; --           ;
+; 5        ; 2 / 44 ( 5 % )  ; 3.3V          ; --           ;
+; 6        ; 0 / 40 ( 0 % )  ; 3.3V          ; --           ;
+; 7        ; 5 / 34 ( 15 % ) ; 3.3V          ; --           ;
+; 8        ; 4 / 43 ( 9 % )  ; 3.3V          ; --           ;
+; 9        ; 0 / 6 ( 0 % )   ; 3.3V          ; --           ;
+; 10       ; 0 / 6 ( 0 % )   ; 3.3V          ; --           ;
++----------+-----------------+---------------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -360,16 +358,16 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; AA1      ;            ; 6        ; VCCIO6                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AA2      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA3      ; 191        ; 7        ; ^nCEO                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; AA4      ; 181        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA4      ; 181        ; 7        ; S1                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AA5      ; 163        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA6      ; 159        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA7      ; 155        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA8      ; 151        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA9      ; 144        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA10     ; 147        ; 10       ; I2                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AA11     ; 141        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA12     ; 138        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA13     ; 137        ; 8        ; I5                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA10     ; 147        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AA11     ; 141        ; 7        ; I0                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA12     ; 138        ; 8        ; STRB                     ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA13     ; 137        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA14     ;            ; 8        ; VREFB8                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA15     ; 127        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA16     ; 123        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -385,7 +383,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; AB4      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB5      ; 161        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB6      ; 157        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AB7      ; 153        ; 7        ; I0                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB7      ; 153        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB8      ; 150        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB9      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB10     ; 145        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -394,7 +392,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; AB13     ; 139        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB15     ; 125        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AB16     ; 124        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AB16     ; 124        ; 8        ; I6                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB17     ; 117        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB18     ; 118        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB19     ; 87         ; 8        ; #TRST                    ; input  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -412,7 +410,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; B9       ; 320        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 321        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B11      ; 327        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 328        ; 4        ; I1                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 328        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B13      ; 331        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B14      ;            ; 3        ; VREFB3                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; B15      ; 341        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -429,12 +427,12 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; C4       ; 285        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C5       ; 306        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C6       ; 308        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C7       ; 316        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; C7       ; 316        ; 4        ; I7                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C8       ; 314        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C9       ; 319        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 324        ; 9        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ; 325        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C12      ; 326        ; 4        ; I4                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ; 326        ; 4        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C13      ; 330        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C14      ; 354        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C15      ; 342        ; 3        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -553,14 +551,14 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; H18      ; 13         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H19      ; 18         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H20      ; 16         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; H21      ; 26         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; H21      ; 26         ; 2        ; I1                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H22      ; 24         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J1       ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J2       ; 247        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J3       ; 245        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J4       ;            ; 5        ; VREFB5                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; J5       ; 250        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; J6       ; 248        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; J6       ; 248        ; 5        ; C                        ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J7       ; 258        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J8       ; 256        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ;            ;          ; VCCINT                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -606,7 +604,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; L5       ;            ;          ; GNDA_PLL4                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCD_PLL4                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L7       ; 238        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L8       ; 236        ; 5        ; I3                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L8       ; 236        ; 5        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L9       ;            ; 5        ; VCCPD5                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L11      ;            ;          ; VCCINT                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -622,7 +620,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; L21      ; 42         ; 2        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L22      ;            ; 2        ; VCCIO2                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; M1       ;            ; 6        ; VCCIO6                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; M2       ; 232        ; 5        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; M2       ; 232        ; 5        ; S2                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M3       ; 234        ; 5        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M4       ;            ;          ; VCCA_PLL3                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; M5       ;            ;          ; VCCD_PLL3                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -662,7 +660,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; N17      ;            ;          ; GNDA_PLL2                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N18      ;            ;          ; GNDA_PLL2                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N19      ; 47         ; 1        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N20      ; 45         ; 1        ; STRB                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N20      ; 45         ; 1        ; GND+                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N21      ; 46         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N22      ; 44         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P1       ;            ;          ; GND                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -742,7 +740,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; U9       ; 171        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U10      ; 158        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U11      ;            ;          ; VCCD_PLL6                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; U12      ; 130        ; 8        ; S2                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; U12      ; 130        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U13      ; 112        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U14      ; 103        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U15      ; 99         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -751,7 +749,7 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; U18      ; 69         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U19      ; 70         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U20      ; 68         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U21      ; 62         ; 1        ; S0                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U21      ; 62         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U22      ; 60         ; 1        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V1       ; 203        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V2       ; 201        ; 6        ; GND*                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -761,10 +759,10 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; V6       ; 185        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V7       ; 175        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V8       ; 166        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; V9       ; 149        ; 10       ; I7                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; V9       ; 149        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V10      ; 165        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V11      ; 132        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; V12      ; 134        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; V12      ; 134        ; 8        ; I5                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; V13      ; 114        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V14      ; 105        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V15      ; 97         ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -784,8 +782,8 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; W7       ; 177        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W8       ;            ; 7        ; VREFB7                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
 ; W9       ; 148        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; W10      ; 142        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; W11      ; 133        ; 8        ; S1                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W10      ; 142        ; 7        ; S0                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W11      ; 133        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W12      ; 135        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W13      ; 128        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W14      ; 109        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -803,16 +801,16 @@ The pin-out file can be found in C:/Users/alari/Desktop/Multiplexor/Multi.pin.
 ; Y4       ; 189        ; 7        ; PLL_ENA                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y5       ; 162        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y6       ; 160        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y7       ; 154        ; 7        ; C                        ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y7       ; 154        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y8       ; 152        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y9       ; 146        ; 10       ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y10      ; 140        ; 7        ; I6                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; Y11      ; 143        ; 7        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y10      ; 140        ; 7        ; I3                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y11      ; 143        ; 7        ; I2                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y12      ; 136        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y13      ; 131        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y14      ; 110        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y15      ; 126        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y16      ; 121        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; Y16      ; 121        ; 8        ; I4                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; Y17      ; 116        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y18      ; 113        ; 8        ; GND*                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y19      ;            ; 8        ; VREFB8                   ; power  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -866,7 +864,7 @@ Note: User assignments will override these defaults. The user specified values a
 ; Compilation Hierarchy Node ; Combinational ALUTs ; ALMs  ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Combinational with no register ; Register-Only      ; Combinational with a register ; Full Hierarchy Name ; Library Name ;
 ;                            ;                     ;       ;                           ;               ;                   ;       ;      ;        ;              ;         ;           ;           ;      ;              ; ALUT/register pair             ; ALUT/register pair ; ALUT/register pair            ;                     ;              ;
 +----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
-; |Multi                     ; 6 (6)               ; 4 (4) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; 6 (6)                          ; 0 (0)              ; 0 (0)                         ; |Multi              ; work         ;
+; |Multi                     ; 2 (2)               ; 2 (2) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; 2 (2)                          ; 0 (0)              ; 0 (0)                         ; |Multi              ; work         ;
 +----------------------------+---------------------+-------+---------------------------+---------------+-------------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+--------------------+-------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -876,19 +874,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------------+---------------+-----------------------+-----+------+---------+----------+------------+
 ; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ; DQS bus ; NDQS bus ; DQS output ;
 +------+----------+---------------+---------------+-----------------------+-----+------+---------+----------+------------+
-; C    ; Output   ; --            ; --            ; --                    ; --  ; 0    ; --      ; --       ; --         ;
-; I3   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; S1   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I1   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; S0   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I7   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I5   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; S2   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I2   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I0   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I6   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
-; I4   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
 ; STRB ; Input    ; 0             ; 0             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; C    ; Output   ; --            ; --            ; --                    ; --  ; 0    ; --      ; --       ; --         ;
+; I6   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I7   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I2   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; S1   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; S2   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I4   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I5   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I0   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; S0   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I1   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
+; I3   ; Input    ; 7             ; 7             ; --                    ; --  ; --   ; --      ; --       ; --         ;
 +------+----------+---------------+---------------+-----------------------+-----+------+---------+----------+------------+
 
 
@@ -897,50 +895,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; I3                  ;                   ;         ;
-;      - Z~15         ; 1                 ; 7       ;
-; S1                  ;                   ;         ;
-;      - Z~15         ; 0                 ; 7       ;
-;      - Z~16         ; 0                 ; 7       ;
-; I1                  ;                   ;         ;
-;      - Z~15         ; 0                 ; 7       ;
-; S0                  ;                   ;         ;
-;      - Z~15         ; 1                 ; 7       ;
-;      - Z~16         ; 1                 ; 7       ;
-; I7                  ;                   ;         ;
-;      - Z~15         ; 1                 ; 7       ;
-; I5                  ;                   ;         ;
-;      - Z~15         ; 0                 ; 7       ;
-; S2                  ;                   ;         ;
-;      - Z~17         ; 1                 ; 7       ;
-; I2                  ;                   ;         ;
-;      - Z~16         ; 0                 ; 7       ;
-; I0                  ;                   ;         ;
-;      - Z~16         ; 0                 ; 7       ;
-; I6                  ;                   ;         ;
-;      - Z~16         ; 0                 ; 7       ;
-; I4                  ;                   ;         ;
-;      - Z~16         ; 1                 ; 7       ;
 ; STRB                ;                   ;         ;
+; I6                  ;                   ;         ;
+;      - C~5          ; 0                 ; 7       ;
+; I7                  ;                   ;         ;
+;      - C~5          ; 0                 ; 7       ;
+; I2                  ;                   ;         ;
+;      - C~5          ; 1                 ; 7       ;
+; S1                  ;                   ;         ;
+;      - C~5          ; 0                 ; 7       ;
+;      - C~1          ; 0                 ; 7       ;
+; S2                  ;                   ;         ;
+;      - C~5          ; 0                 ; 7       ;
+;      - C~1          ; 0                 ; 7       ;
+; I4                  ;                   ;         ;
+;      - C~1          ; 0                 ; 7       ;
+; I5                  ;                   ;         ;
+;      - C~1          ; 0                 ; 7       ;
+; I0                  ;                   ;         ;
+;      - C~1          ; 0                 ; 7       ;
+; S0                  ;                   ;         ;
+;      - C~1          ; 1                 ; 7       ;
+; I1                  ;                   ;         ;
+;      - C~1          ; 1                 ; 7       ;
+; I3                  ;                   ;         ;
+;      - C~5          ; 0                 ; 7       ;
 +---------------------+-------------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                         ;
-+------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; STRB ; PIN_N20  ; 2       ; Latch enable ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-+------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-
-
-+-------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                     ;
-+------+----------+---------+----------------------+------------------+---------------------------+
-; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------+----------+---------+----------------------+------------------+---------------------------+
-; STRB ; PIN_N20  ; 2       ; Global Clock         ; GCLK3            ; --                        ;
-+------+----------+---------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------+
@@ -948,23 +928,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+--------------------------+
 ; Name ; Fan-Out                  ;
 +------+--------------------------+
-; S0   ; 2                        ;
+; S2   ; 2                        ;
 ; S1   ; 2                        ;
-; Y    ; 2                        ;
-; Z    ; 2                        ;
-; Z~17 ; 2                        ;
-; I4   ; 1                        ;
-; I6   ; 1                        ;
-; I0   ; 1                        ;
-; I2   ; 1                        ;
-; S2   ; 1                        ;
-; I5   ; 1                        ;
-; I7   ; 1                        ;
-; I1   ; 1                        ;
 ; I3   ; 1                        ;
-; Z~16 ; 1                        ;
-; Z~15 ; 1                        ;
-; C~0  ; 1                        ;
+; I1   ; 1                        ;
+; S0   ; 1                        ;
+; I0   ; 1                        ;
+; I5   ; 1                        ;
+; I4   ; 1                        ;
+; I2   ; 1                        ;
+; I7   ; 1                        ;
+; I6   ; 1                        ;
+; C~5  ; 1                        ;
+; C~1  ; 1                        ;
 +------+--------------------------+
 
 
@@ -973,7 +949,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+-----------------------+
 ; Interconnect Resource Type                ; Usage                 ;
 +-------------------------------------------+-----------------------+
-; Block interconnects                       ; 14 / 51,960 ( < 1 % ) ;
+; Block interconnects                       ; 12 / 51,960 ( < 1 % ) ;
 ; C16 interconnects                         ; 9 / 1,680 ( < 1 % )   ;
 ; C4 interconnects                          ; 14 / 38,400 ( < 1 % ) ;
 ; DPA clocks                                ; 0 / 4 ( 0 % )         ;
@@ -982,18 +958,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DQS-4 I/O buses                           ; 0 / 18 ( 0 % )        ;
 ; DQS-9 I/O buses                           ; 0 / 8 ( 0 % )         ;
 ; Differential I/O clocks                   ; 0 / 32 ( 0 % )        ;
-; Direct links                              ; 1 / 51,960 ( < 1 % )  ;
-; Global clocks                             ; 1 / 16 ( 6 % )        ;
-; Local interconnects                       ; 5 / 12,480 ( < 1 % )  ;
+; Direct links                              ; 0 / 51,960 ( 0 % )    ;
+; Global clocks                             ; 0 / 16 ( 0 % )        ;
+; Local interconnects                       ; 1 / 12,480 ( < 1 % )  ;
 ; NDQS bus muxes                            ; 0 / 18 ( 0 % )        ;
 ; NDQS-18 I/O buses                         ; 0 / 4 ( 0 % )         ;
 ; NDQS-4 I/O buses                          ; 0 / 18 ( 0 % )        ;
 ; NDQS-9 I/O buses                          ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver load enables  ; 0 / 8 ( 0 % )         ;
 ; PLL transmitter or receiver synch. clocks ; 0 / 8 ( 0 % )         ;
-; R24 interconnects                         ; 2 / 1,664 ( < 1 % )   ;
-; R24/C16 interconnect drivers              ; 0 / 4,160 ( 0 % )     ;
-; R4 interconnects                          ; 14 / 59,488 ( < 1 % ) ;
+; R24 interconnects                         ; 4 / 1,664 ( < 1 % )   ;
+; R24/C16 interconnect drivers              ; 2 / 4,160 ( < 1 % )   ;
+; R4 interconnects                          ; 13 / 59,488 ( < 1 % ) ;
 ; Regional clocks                           ; 0 / 32 ( 0 % )        ;
 +-------------------------------------------+-----------------------+
 
@@ -1001,12 +977,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------+
 ; LAB Logic Elements                                             ;
 +----------------------------------+-----------------------------+
-; Number of ALMs  (Average = 4.00) ; Number of LABs  (Total = 1) ;
+; Number of ALMs  (Average = 2.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------+-----------------------------+
 ; 1                                ; 0                           ;
-; 2                                ; 0                           ;
+; 2                                ; 1                           ;
 ; 3                                ; 0                           ;
-; 4                                ; 1                           ;
+; 4                                ; 0                           ;
 ; 5                                ; 0                           ;
 ; 6                                ; 0                           ;
 ; 7                                ; 0                           ;
@@ -1017,15 +993,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 6.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 2.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 1                           ;
+; 2                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1042,7 +1014,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 12.00) ; Number of LABs  (Total = 1) ;
+; Number of Distinct Inputs  (Average = 11.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1055,8 +1027,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
+; 11                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1121,19 +1092,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Inapplicable ; 13           ; 13           ; 13           ; 13           ; 13           ; 0         ; 13           ; 13           ; 0         ; 0         ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 0         ; 13           ; 13           ; 13           ; 13           ; 13           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; C                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I7                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I5                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; S2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I6                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; I4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; STRB               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; C                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I6                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I7                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; S1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; S2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I5                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; S0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; I3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1197,19 +1168,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Auto Fit Point 1 - Fit Attempt 1                                         ; ff         ;
 ; Mid Wire Use - Fit Attempt 1                                             ; 0          ;
 ; Mid Slack - Fit Attempt 1                                                ; 2147483639 ;
-; Internal Atom Count - Fit Attempt 1                                      ; 7          ;
-; LE/ALM Count - Fit Attempt 1                                             ; 5          ;
+; Internal Atom Count - Fit Attempt 1                                      ; 3          ;
+; LE/ALM Count - Fit Attempt 1                                             ; 3          ;
 ; LAB Count - Fit Attempt 1                                                ; 2          ;
 ; Outputs per Lab - Fit Attempt 1                                          ; 0.500      ;
-; Inputs per LAB - Fit Attempt 1                                           ; 6.000      ;
+; Inputs per LAB - Fit Attempt 1                                           ; 5.500      ;
 ; Global Inputs per LAB - Fit Attempt 1                                    ; 0.000      ;
 ; LAB Constraint 'CE + async load' - Fit Attempt 1                         ; 0:2        ;
 ; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1            ; 0:2        ;
 ; LAB Constraint 'non-global controls' - Fit Attempt 1                     ; 0:2        ;
 ; LAB Constraint 'deterministic LABSMUXA/LABSMUXB overuse' - Fit Attempt 1 ; 0:2        ;
 ; LAB Constraint 'deterministic LABSMUXE/LABSMUXF overuse' - Fit Attempt 1 ; 0:2        ;
-; LAB Constraint 'global controls' - Fit Attempt 1                         ; 0:1;1:1    ;
-; LAB Constraint 'global non-clock/non-asynch_clear' - Fit Attempt 1       ; 0:1;1:1    ;
+; LAB Constraint 'global controls' - Fit Attempt 1                         ; 0:2        ;
+; LAB Constraint 'global non-clock/non-asynch_clear' - Fit Attempt 1       ; 0:2        ;
 ; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1              ; 0:2        ;
 ; LAB Constraint 'clock constraint' - Fit Attempt 1                        ; 0:2        ;
 ; LAB Constraint 'carry chain tie-off constraint' - Fit Attempt 1          ; 0:2        ;
@@ -1259,10 +1230,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                               ; Value       ;
 +------------------------------------+-------------+
 ; Early Slack - Fit Attempt 1        ; 2147483639  ;
-; Early Wire Use - Fit Attempt 1     ; 0           ;
-; Peak Regional Wire - Fit Attempt 1 ; 0           ;
 ; Mid Slack - Fit Attempt 1          ; 2147483639  ;
 ; Late Slack - Fit Attempt 1         ; -2147483648 ;
+; Early Wire Use - Fit Attempt 1     ; 0           ;
+; Peak Regional Wire - Fit Attempt 1 ; 0           ;
 ; Late Wire Use - Fit Attempt 1      ; 0           ;
 ; Time - Fit Attempt 1               ; 0           ;
 +------------------------------------+-------------+
@@ -1274,7 +1245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 10 13:13:10 2018
+    Info: Processing started: Wed Apr 11 22:58:41 2018
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Multi -c Multi
 Info: Automatically selected device EP2S15F484C3 for design Multi
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
@@ -1283,24 +1254,22 @@ Info: Device migration not selected. If you intend to use device migration later
 Info: Fitter converted 1 user pins into dedicated programming pins
     Info: Pin ~DATA0~ is reserved at location E13
 Warning: No exact pin location assignment(s) for 13 pins of 13 total pins
-    Info: Pin C not assigned to an exact location on the device
-    Info: Pin I3 not assigned to an exact location on the device
-    Info: Pin S1 not assigned to an exact location on the device
-    Info: Pin I1 not assigned to an exact location on the device
-    Info: Pin S0 not assigned to an exact location on the device
-    Info: Pin I7 not assigned to an exact location on the device
-    Info: Pin I5 not assigned to an exact location on the device
-    Info: Pin S2 not assigned to an exact location on the device
-    Info: Pin I2 not assigned to an exact location on the device
-    Info: Pin I0 not assigned to an exact location on the device
-    Info: Pin I6 not assigned to an exact location on the device
-    Info: Pin I4 not assigned to an exact location on the device
     Info: Pin STRB not assigned to an exact location on the device
+    Info: Pin C not assigned to an exact location on the device
+    Info: Pin I6 not assigned to an exact location on the device
+    Info: Pin I7 not assigned to an exact location on the device
+    Info: Pin I2 not assigned to an exact location on the device
+    Info: Pin S1 not assigned to an exact location on the device
+    Info: Pin S2 not assigned to an exact location on the device
+    Info: Pin I4 not assigned to an exact location on the device
+    Info: Pin I5 not assigned to an exact location on the device
+    Info: Pin I0 not assigned to an exact location on the device
+    Info: Pin S0 not assigned to an exact location on the device
+    Info: Pin I1 not assigned to an exact location on the device
+    Info: Pin I3 not assigned to an exact location on the device
 Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info: Fitter is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
-Info: Automatically promoted node STRB (placed in PIN N20 (CLK3p, Input))
-    Info: Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
 Info: Starting register packing
 Extra Info: Performing register packing on registers with non-logic cell location assignments
 Extra Info: Completed register packing on registers with non-logic cell location assignments
@@ -1311,11 +1280,11 @@ Extra Info: Finished moving registers into I/O cells, DSP blocks, and RAM blocks
 Info: Finished register packing
     Extra Info: No registers were packed into other blocks
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 12 (unused VREF, 3.3V VCCIO, 11 input, 1 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 13 (unused VREF, 3.3V VCCIO, 12 input, 1 output, 0 bidirectional)
         Info: I/O standards used: 3.3-V LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
-        Info: I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  39 pins available
+        Info: I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  44 pins available
         Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  49 pins available
         Info: I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  35 pins available
@@ -1325,7 +1294,7 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info: I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
         Info: I/O bank number 10 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -1345,7 +1314,7 @@ Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Tue Apr 10 13:13:16 2018
+    Info: Processing ended: Wed Apr 11 22:58:47 2018
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
